@@ -1,0 +1,83 @@
+.apresentation-container {
+  background-color: #040F16;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.apresentation-sub-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+}
+
+.apresentation {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2;
+  width: 50%;
+}
+
+.hello {
+  color: #E7ECEF;
+  font-size: 30px;
+  line-height: 3;
+}
+
+.douglas {
+  color: #E7ECEF;
+  font-size: 50px;
+}
+
+.develop {
+  font-size: 40px;
+  color: #0094C6; 
+}
+
+.contain-buttons {
+  display: flex;
+}
+
+.download {
+  border-radius: 5px;
+  border: none;
+  background-color: #0094C6;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 10px;
+  padding: 5px;
+  width: 240px;
+}
+
+.icon-download {
+  margin: 0 10px;
+}
+
+.download:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.enter-contact {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #0094C6;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  width: 240px;
+}
+
+.enter-contact:hover {
+  cursor: pointer;
+  color: #0094C6;
+}
+
+.img-me {
+  margin-top: 70px;
+  width: 50%;
+}

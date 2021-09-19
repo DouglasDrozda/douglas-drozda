@@ -1,0 +1,43 @@
+.about-container {
+  background-color: #060606;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.about-sub-container {
+  width: 85%;
+}
+
+.about-tilte-contain {
+  display: flex;
+  justify-content: center;
+  margin: 70px
+}
+
+.about {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  color: #0094C6;
+}
+
+.description-contain {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.description-doug {
+  margin: 10px 30px;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.description {
+  margin: 0 30px;
+  width:  500px;
+  line-height: 1.5;
+  font-size: 18px;
+  font-family: "Helvetica Neue", "Helvetica";
+}

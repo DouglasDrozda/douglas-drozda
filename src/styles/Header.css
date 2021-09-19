@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  background-color: #060606;
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  position: fixed;
+  width: 100vw;
+}
+
+.header-sub-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.name {
+  font-family: 'Cantarell', sans-serif;
+  color: #0094C6;
+}
+
+.header-options {
+  display: flex;
+}
+
+.options {
+  margin: 0 15px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.options:hover {
+  color: #0094C6;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.logos-sociais {
+  margin: 0 10px;
+  width: 20px;
+  color: #0094C6;
+}
