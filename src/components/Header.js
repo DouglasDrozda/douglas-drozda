@@ -1,32 +1,30 @@
 import React from 'react';
+import { FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import '../styles/Header.css';
-import instagram from '../images/instagram.png';
-import linkedin from '../images/linkedin.png';
-import whatsapp from '../images/whatsapp.png';
 
 class Header extends React.Component {
   render() {
     return (
-      <div className="header-container">
+      <header className="header-container">
         <div className="header-sub-container">
           <h1 className="name">Douglas Drozda</h1>
-          <div className="header-options">
+          <nav className="header-options">
             <p className="options">Home</p>
             <p className="options">Sobre</p>
             <p className="options">Projetos</p>
             <p className="options">Contato</p>
             <a href="https://www.instagram.com/doouglasdrozda/" target="_blank">
-              <img className="logos-sociais" src={ instagram } alt="logo-instagram" />
+              <FaInstagram className="logos-sociais" />
             </a>
             <a href="https://www.linkedin.com/in/douglasdrozda/" target="_blank">
-              <img className="logos-sociais" src={ linkedin } alt="logo-linkedin" />
+              <FaLinkedin className="logos-sociais" />
             </a>
             <a href="https://api.whatsapp.com/send?phone=13997715719" target="_blank">
-              <img className="logos-sociais" src={ whatsapp } alt="logo-whatsapp" />
+              <FaWhatsapp className="logos-sociais" />
             </a>
-          </div>
+          </nav>
         </div>
-      </div>
+      </header>
     );
   }
 }
