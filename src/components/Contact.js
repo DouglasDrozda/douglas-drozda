@@ -7,28 +7,32 @@ import message from '../images/message.png';
 class Contact extends React.Component {
   render() {
     return (
-      <div className="contact-container">
+      <div id="contact" className="contact-container">
         <div className="contact-sub-container">
           <div className="contact-contain">
             <h2 className="contact-title">Contato</h2>
           </div>
           <div className="icons-contact-contain">
             <div className="whatsapp">
-              <img className="icons" src={ telephone }  alt="icon-phone" width="36px" />
+              <img className="icons" src={telephone} alt="icon-phone" />
               <div className="info-whatsapp">
-                <p>WhatsApp</p>
-                <p>(13)99771-5719</p>
+                <a href="https://api.whatsapp.com/send?phone=13997715719" rel="noreferrer" target="_blank">
+                  <p>WhatsApp</p>
+                  <p>(13)99771-5719</p>
+                </a>
               </div>
             </div>
             <div className="whatsapp">
-              <img className="icons" src={ placeholder }  alt="icon-phone" width="36px" />
+              <img className="icons" src={message} alt="icon-phone" />
               <div className="info-whatsapp">
-                <p>Email</p>
-                <p>lowdouglas9712@gmail.com</p>
+                <a href="mailto:lowdouglas9712@gmail.com?subject=Preciso%20falar%20com%20você">
+                  <p>Email</p>
+                  <p>lowdouglas9712@gmail.com</p>
+                </ a>
               </div>
             </div>
             <div className="whatsapp">
-              <img className="icons" src={ message }  alt="icon-phone" width="36px" />
+              <img className="icons" src={placeholder} alt="icon-phone" />
               <div className="info-whatsapp">
                 <p>Localização</p>
                 <p>São Paulo - Brasil</p>

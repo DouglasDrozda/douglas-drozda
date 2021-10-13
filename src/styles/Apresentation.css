@@ -37,6 +37,11 @@
 
 .contain-buttons {
   display: flex;
+  align-items: center;
+}
+
+.contain-buttons a {
+  width: 100%;
 }
 
 .download {
@@ -48,8 +53,8 @@
   font-size: 18px;
   font-weight: 700;
   margin: 0 10px;
+  width: 100%;
   padding: 5px;
-  width: 240px;
 }
 
 .icon-download {
@@ -65,12 +70,14 @@
   text-align: center;
   text-decoration: none;
   color: white;
+  background-color: #060606;
   border-radius: 5px;
+  border: none;
   border: 1px solid #0094C6;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 700;
-  width: 240px;
+  padding: 5px;
 }
 
 .enter-contact:hover {
@@ -81,4 +88,122 @@
 .img-me {
   margin-top: 70px;
   width: 50%;
+}
+
+@media screen and ( min-width: 617px) and (max-width: 1023px) {
+  .apresentation-sub-container {
+    margin-top: 40px;
+  }
+
+  .apresentation {
+    margin-top: 50px;
+  }
+
+  .hello {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .douglas {
+    font-size: 2rem;
+  }
+  
+  .develop {
+    font-size: 1.2rem;
+  }
+
+  .icon-download {
+    display: none;
+  }
+
+  .download {
+    margin: 0 5px;
+    font-size: 0.8rem;
+  }
+
+  .enter-contact {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen  and ( min-width: 479px) and (max-width: 617px) {
+
+  .apresentation-sub-container {
+    margin-top: 40px;
+  }
+
+  .apresentation {
+    margin-top: 50px;
+  }
+
+  .hello {
+    font-size: 0.9rem;
+    line-height: 1;
+  }
+
+  .douglas {
+    font-size: 1.5rem;
+  }
+  
+  .develop {
+    font-size: 0.9rem;
+  }
+
+  .icon-download {
+    display: none;
+  }
+
+  .download {
+    margin: 0 5px;
+    font-size: 0.5rem;
+  }
+
+  .enter-contact {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and ( max-width: 479px) {
+
+  .apresentation-sub-container {
+    margin-top: 10px;
+  }
+
+  .apresentation {
+    margin-top: 100px
+  }
+
+  .hello {
+    font-size: 0.6rem;
+    line-height: 2;
+  }
+
+  .douglas {
+    font-size: 0.9rem;
+  }
+  
+  .develop {
+    font-size: 0.7rem;
+  }
+
+  .contain-buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+  }
+
+  .icon-download {
+    display: none;
+  }
+
+  .download {
+    margin: 10px 0;
+    font-size: 0.5rem;
+    width: 100%;
+  }
+
+  .enter-contact {
+    font-size: 0.5rem;
+    width: 100%;
+  }
 }

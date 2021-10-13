@@ -1,9 +1,12 @@
 .project-container {
+  align-items: center;
+  flex-direction: column;
   background-color: #060606;
   color: white;
   display: flex;
   width: 100%;
   justify-content: center;
+  color: black;
 }
 
 .project-sub-container {
@@ -11,11 +14,13 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 85%;
-  margin: 70px
+  width: 60%;
+  color: black;
+  margin: 70px;
 }
 
 .project-title {
+  margin-top: 50px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 50px;
@@ -33,10 +38,7 @@
   background-color: #E7ECEF;
   display: flex;
   padding: 15px;
-  text-align: center;
-  justify-content: center;
-  width: 450px;
-  height: 300px;
+  width: 300px;
   border-radius: 5px;
   margin: 30px 10px;
 }

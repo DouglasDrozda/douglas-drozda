@@ -29,6 +29,11 @@
   justify-content: center;
 }
 
+.description-doug-contain {
+  display: flex;
+  flex-direction: column;
+}
+
 .description-doug {
   margin: 10px 30px;
   font-size: 30px;
@@ -36,9 +41,44 @@
 }
 
 .description {
-  margin: 0 30px;
+  margin: 30px;
   width:  500px;
   line-height: 1.5;
   font-size: 18px;
   font-family: "Helvetica Neue", "Helvetica";
+}
+
+@media screen and ( min-width: 767px) and (max-width: 1023px) {
+  .description-contain img {
+    display: none;
+  }
+
+  .description-contain {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen  and ( min-width: 479px) and (max-width: 767px) {
+  .description-contain img {
+    display: none;
+  }
+
+  .description-contain {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and ( max-width: 479px) {
+  .description-contain img {
+    display: none;
+  }
+
+  .description-contain {
+    flex-wrap: wrap;
+  }
+
+  .description-doug-contain {
+    flex-wrap: wrap;
+  }
 }
