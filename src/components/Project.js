@@ -1,120 +1,67 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Project.css';
-import movieCards from '../images/movieCards.png'
-import { Carousel } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
+import data from '../service/data';
 
-class Project extends React.Component {
-  render() {
-    return (
-      <div className="project-container">
+function Project() {
+  const [show, setShow] = useState(false);
+  const [img, setImg] = useState('');
+  const [link, setLink] = useState('');
+  const [description, setDescription] = useState('');
+  const [github, setGithub] = useState('');
+
+
+  const handleShow = () => setShow(!show);
+
+  const getInfosCards = (link, image, description, github) => {
+    setLink(link);
+    setImg(image);
+    setDescription(description);
+    setGithub(github)
+  }
+
+  return (
+    <div id="project" className="project-container">
+      <div className="project-sub-container">
         <div>
           <h2 className="project-title">Projetos</h2>
         </div>
-        <Carousel id="project" className="project-sub-container">
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={movieCards}
-              alt="First slide"
-            />
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={movieCards}
-              alt="Second slide"
-            />
-
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={movieCards}
-              alt="Third slide"
-            />
-
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={movieCards}
-              alt="Third slide"
-            />
-
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={movieCards}
-              alt="Third slide"
-            />
-
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={movieCards}
-              alt="Third slide"
-            />
-
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
+        <div className="projects">
+          <div className="projects" onClick={handleShow}>
+            <Modal
+              show={show}
+              backdrop="static"
+              keyboard={false}
+            >
+              <Modal.Header closeButton>
+                <img src={img} alt="movie-card-crud" width="100%" />
+              </Modal.Header>
+              <Modal.Body>
+                <p>{description}</p>
+              </Modal.Body>
+              <Modal.Footer>
+                <a href={link} className="btn-project" target="_blank" rel="noreferrer">
+                  Visitar projeto
+                </a>
+                <a href={github} className="btn-github" target="_blank" rel="noreferrer">
+                  GitHub
+                </a>
+              </Modal.Footer>
+            </Modal>
+              {
+                Object.values(data).map((card) => {
+                  return (
+                    <div className="projects-1">
+                      <img src={card.img} alt={card.name} onClick={() => getInfosCards(card.link, card.img, card.description, card.github)} width="100%" className="img-card" />
+                    </div>)
+                })
+              }
+          </div>
+        </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default Project;
 
-
-/*       <div id="project" className="project-container">
-              <div className="project-sub-container">
-                <div>
-                  <h2 className="project-title">Projetos</h2>
-                </div>
-                <div className="projects">
-                  <div className="projects-1">
-                    <img src={ movieCards } alt="movie-card-crud" width="100%" />
-                  </div>
-                  <div className="projects-1">
-                    <img src={ movieCards } alt="movie-card-crud" width="100%" />
-                  </div>
-                  <div className="projects-1">
-                    <img src={ movieCards } alt="movie-card-crud" width="100%" />
-                  </div>
-                  <div className="projects-1">
-                    <img src={ movieCards } alt="movie-card-crud" width="100%" />
-                  </div>
-                  <div className="projects-1">
-                    <img src={ movieCards } alt="movie-card-crud" width="100%" />
-                  </div>
-                  <div className="projects-1">
-                    <img src={ movieCards } alt="movie-card-crud" width="100%" />
-                  </div>
-                </div>
-              </div>
-            </div> */

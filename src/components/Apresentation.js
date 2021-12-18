@@ -3,7 +3,7 @@ import '../styles/Apresentation.css';
 import me from '../images/me.png';
 import download from '../images/download.png';
 import animateScroll from '../functions/scrollReveal';
-
+import curriculoDouglasDrozda from '../images/curriculoDouglasDrozda.pdf';
 
 function Apresentation() {
 
@@ -19,8 +19,8 @@ function Apresentation() {
           <h1 className="douglas">Douglas Drozda</h1>
           <h2 className="develop">Desenvolvedor Front-end</h2>
           <div className="contain-buttons">
-            <button type="button" className="download">Download CV<img className="icon-download" src={download} alt="download" /></button>
-            <a href="https://api.whatsapp.com/send?phone=13997715719" target="_blank">
+            <a href={curriculoDouglasDrozda} download className="download" rel="noreferrer">Download CV<img className="icon-download" src={download} alt="download" /></a>
+            <a href="https://api.whatsapp.com/send?phone=13997715719" target="_blank" rel="noreferrer">
               <button type="button" className="enter-contact">Entrar em contato</button>
             </a>
           </div>

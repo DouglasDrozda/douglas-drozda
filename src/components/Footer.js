@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaWhatsapp, FaGithub } from 'react-icons/fa';
 import '../styles/Footer.css';
 import { Anchor } from 'antd';
 
@@ -19,6 +19,9 @@ class Footer extends React.Component {
             </a>
             <a href="https://api.whatsapp.com/send?phone=13997715719" rel="noreferrer" target="_blank">
               <FaWhatsapp className="icons-sociais" />
+            </a>
+            <a href="https://github.com/DouglasDrozda" rel="noreferrer" target="_blank">
+              <FaGithub className="icons-sociais" />
             </a>
           </div>
           <div className="options-container">

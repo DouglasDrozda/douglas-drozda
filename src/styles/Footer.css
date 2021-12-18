@@ -1,4 +1,5 @@
 .footer-container {
+  overflow-x: hidden;
   background-color: #060606;
   justify-content: center;
   display: flex;

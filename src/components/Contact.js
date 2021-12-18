@@ -25,9 +25,9 @@ class Contact extends React.Component {
             <div className="whatsapp">
               <img className="icons" src={message} alt="icon-phone" />
               <div className="info-whatsapp">
-                <a href="mailto:lowdouglas9712@gmail.com?subject=Preciso%20falar%20com%20você">
+                <a href="mailto:db.drozda@gmail.com">
                   <p>Email</p>
-                  <p>lowdouglas9712@gmail.com</p>
+                  <p>db.drozda@gmail.com</p>
                 </ a>
               </div>
             </div>
