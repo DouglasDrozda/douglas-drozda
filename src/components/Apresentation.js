@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import '../styles/Apresentation.css';
-import me from '../images/me.png';
+import hello from '../images/hello.svg';
 import download from '../images/download.png';
 import animateScroll from '../functions/scrollReveal';
 import curriculoDouglasDrozda from '../images/curriculoDouglasDrozda.pdf';
 
 function Apresentation() {
 
- useEffect(() => {
-  animateScroll()
- },[]);
+  useEffect(() => {
+    animateScroll()
+  }, []);
 
   return (
     <section id="home" className="apresentation-container">
@@ -19,14 +19,14 @@ function Apresentation() {
           <h1 className="douglas">Douglas Drozda</h1>
           <h2 className="develop">Desenvolvedor Front-end</h2>
           <div className="contain-buttons">
-            <a href={curriculoDouglasDrozda} download className="download" rel="noreferrer">Download CV<img className="icon-download" src={download} alt="download" /></a>
-            <a href="https://api.whatsapp.com/send?phone=13997715719" target="_blank" rel="noreferrer">
-              <button type="button" className="enter-contact">Entrar em contato</button>
+            <a href={curriculoDouglasDrozda} download className="download" rel="noreferrer">DOWNLOAD CV<img className="icon-download" src={download} alt="download" /></a>
+            <a href="https://api.whatsapp.com/send?phone=13997715719" target="_blank" rel="noreferrer" className="enter-contact">
+              ENTRAR EM CONTATO
             </a>
           </div>
         </div>
         <div className="img-me">
-          <img src={me} alt="minha-foto" width="100%" />
+          <img src={hello} alt="minha-foto" width="100%" />
         </div>
       </div>
     </section>
